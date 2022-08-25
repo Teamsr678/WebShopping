@@ -1,0 +1,17 @@
+.btn-blue{
+    background: #89C4FF;
+}
+
+.text-large{
+    font-size: 48px;
+}
+
+.text-medium{
+    font-size: 24px;
+}
+
+.btn-style-1{
+    border-radius: 0px;
+    width: 384px;
+    height: 60px;
+}

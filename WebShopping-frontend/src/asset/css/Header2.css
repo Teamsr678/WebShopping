@@ -1,0 +1,62 @@
+@import "default";
+
+.header2{
+    position: relative;
+    width: 1920px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A8D3FF;
+}
+
+.header2-top{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A8D3FF;
+}
+
+.dolls-button{
+    position: absolute;
+    width: 72px;
+    height: 35px;
+    left: 417px;
+    top: 16px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+.outfits-button{
+    position: absolute;
+    width: 77px;
+    height: 29px;
+    left: 531px;
+    top: 16px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.etc-button{
+    position: absolute;
+    width: 43px;
+    height: 29px;
+    left: 649px;
+    top: 16px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}

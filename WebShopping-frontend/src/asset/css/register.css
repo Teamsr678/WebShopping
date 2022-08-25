@@ -1,0 +1,62 @@
+@import "default";
+.register{
+    position: relative;
+    min-height: 695px;
+}
+
+.reister-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+    width: 550px;
+    height: 600px;
+    background-color: white;
+    top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form{
+    width: 384px;
+    height: 60px;
+}
+
+.position{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.top{
+    margin-top: 15px;
+}
+
+.error-input-name{
+    position: absolute;
+    top: 185px;
+    left: 85px;
+    color: red;
+}
+
+.error-input-email{
+    position: absolute;
+    top: 280px;
+    left: 85px;
+    color: red;
+}
+
+.error-input-password{
+    position: absolute;
+    top: 375px;
+    left: 85px;
+    color: red;
+}
+
+.error-input-password_repeat{
+    position: absolute;
+    top: 470px;
+    left: 85px;
+    color: red;
+}

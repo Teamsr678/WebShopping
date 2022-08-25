@@ -1,0 +1,140 @@
+@import "default";
+
+.home{
+    background-color: white;
+    position: relative;
+    width: 1520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight{
+    position: relative;
+    width: 1520px;
+    height: 376.16px;
+    background: #FFFFFF;
+}
+
+.text-recommend{
+    position: relative;
+    width: 210px;
+    left: 640px;
+    top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.box-home{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 20px;
+    width: 1520px;
+    gap: 40px;
+}
+
+.image-highlight{
+    width: 1520px;
+    height: 376.16px;
+}
+
+.box-home-1{
+    position: relative;
+    width: 344px;
+    height: 510px;
+}
+
+.image-box{
+    width: 344px;
+    height: 340px;
+    border-radius: 5px;
+}
+
+.image{
+    width: 340px;
+    height: 335px;
+    border-radius: 5px;
+}
+
+.details-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:#A8D3FF;
+    gap: 4px;
+    width: 344px;
+    height: 170px; 
+    border-radius: 5px;
+}
+
+.frame{
+    border: 0.1px double rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.text-image-box{
+    position: relative;
+    left: 138px;
+    top: 155px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.details-image-box{
+    margin-top: 15px;
+}
+
+.tab-change-page{
+    position: relative;
+    top: 20px;
+    width: 1520px;
+    height: 135px;
+    background-color: #89C4FF;
+}
+
+.page-button{
+    width: 55px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.page-button-all{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    gap: 20px;
+    left: 1150px;
+    top: 50px;
+    width: 320px;
+    height: 44px;
+}
+
+.selcet-box{
+    position: absolute;
+    width: 117px;
+    height: 46px;
+    left: 30px;
+    top: 50px;
+}
+
+.text-select-box{
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    left: 170px;
+    top: 58px;
+    color: #FFFFFF;
+}

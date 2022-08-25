@@ -1,0 +1,21 @@
+.copyright{  
+    background-color: white;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 1520px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright-top{
+    height: 100px;
+    background-color: white;
+    position: relative;
+}
+
+.text-copyright{
+    position: relative;
+    top: 40px;
+}
