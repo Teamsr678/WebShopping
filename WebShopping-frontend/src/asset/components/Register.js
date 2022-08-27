@@ -29,10 +29,11 @@ function Register(){
     const onSubmit = (data) =>{       
             set_errorMessage_username(null);
             set_errorMessage_email(null); 
-            axios.post('/register',{
+            axios.post('/api/auth/register',{
                 username: data.username,
                 email: data.email,
-                password: data.password
+                password: data.password,
+                role : ["ROLE_USER"]
             })
             .then(response =>{
                 if(response.status === 200){
@@ -42,8 +43,8 @@ function Register(){
             .catch((error) => { 
                 if(error.response.status === 400){
                     const errorMessage = error.response.data.message; // eslint-disable-next-line
-                    if(errorMessage == "มีชื่อผู้ใช้นี้ในระบบแล้ว"){set_errorMessage_username(error.response.data.message);} // eslint-disable-next-line
-                    if(errorMessage == "มีอีเมลล์นี้ในระบบแล้ว"){set_errorMessage_email(error.response.data.message);}
+                    if(errorMessage == "Error: Username is already taken!"){set_errorMessage_username(error.response.data.message);} // eslint-disable-next-line
+                    if(errorMessage == "Error: Email is already in use!"){set_errorMessage_email(error.response.data.message);}
                 }
             })
     }
