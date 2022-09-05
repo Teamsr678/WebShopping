@@ -1,12 +1,12 @@
 import Header from "./Header";
 import Header2 from "./Header2";
 import Copyright from "./Copyright";
-import './../css/register.css'
+import './../css/register.css';
 import * as React from "react";
 import { useRef } from "react";
 import { useForm } from "react-hook-form";
-import axios from "axios";
-import {useState, useEffect} from 'react'
+import {useState} from 'react';
+import AuthService from "./../service/auth.service";
 
 function Register(){
 
@@ -18,10 +18,6 @@ function Register(){
     const password = useRef({});
     password.current = watch("password","");
 
-    useEffect(() => {    
-        
-    });
-
     const [errorMessage_username, set_errorMessage_username] = useState("");
     const [errorMessage_email, set_errorMessage_email] = useState("");
 
@@ -29,19 +25,14 @@ function Register(){
     const onSubmit = (data) =>{       
             set_errorMessage_username(null);
             set_errorMessage_email(null); 
-            axios.post('/api/auth/register',{
-                username: data.username,
-                email: data.email,
-                password: data.password,
-                role : ["ROLE_USER"]
-            })
+            AuthService.register(data.username, data.email, data.password)
             .then(response =>{
                 if(response.status === 200){
                     window.location.replace("http://localhost:3000/register_success");
                 }
             })
             .catch((error) => { 
-                if(error.response.status === 400){
+                if(error.response.status !== 200){
                     const errorMessage = error.response.data.message; // eslint-disable-next-line
                     if(errorMessage == "Error: Username is already taken!"){set_errorMessage_username(error.response.data.message);} // eslint-disable-next-line
                     if(errorMessage == "Error: Email is already in use!"){set_errorMessage_email(error.response.data.message);}
@@ -49,7 +40,7 @@ function Register(){
             })
     }
 
-    function handleChange(){
+    const handleChange = () =>{
         set_errorMessage_username(null);
         set_errorMessage_email(null);
     }

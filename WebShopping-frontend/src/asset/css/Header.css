@@ -85,6 +85,20 @@
     line-height: 29px;
 }
 
+.logout-botton{
+    position: absolute;
+    width: 63px;
+    height: 29px;
+    left: 1575px;
+    top: 36px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
 .cart-botton{
     position: absolute;
     width: 57px;

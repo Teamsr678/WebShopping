@@ -61,7 +61,6 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    top: -25px;
     width: 385px;
     height: 25px;
 }
@@ -101,4 +100,16 @@
 
 .link{
     text-decoration: none;
+}
+
+.error-login{
+    position: absolute;
+    top: 275px;
+    left: 85px;
+    color: red;
+}
+
+.login-a{
+    position: relative;
+    top: 15px;
 }

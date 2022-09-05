@@ -14,11 +14,13 @@ import product_8 from './../image/product/8.jpg';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import axios from "axios";
-
+import AuthService from "./../service/auth.service";
 
 
 const Home = () => {
-    
+
+    const currentUser = AuthService.getCurrentUser();
+
     const [products, setProduct] = useState([]);
     const [products2, setProduct2] = useState([]);
     const [products3, setProduct3] = useState([]);
@@ -43,7 +45,7 @@ const Home = () => {
             setProduct8(data[7]);
         })
         .catch((error) => {
-            console.log(error);
+           // console.log(error);
         });
     },[]);
 
@@ -51,12 +53,12 @@ const Home = () => {
         <div>
             <Header/>
             <Header2/>
-            
+         
                 <div className='home'>
                     <br></br>
                     <br></br>
                     <div className='highlight'> <img className='image-highlight' src={product_0} alt=""/> </div> 
-                    <h1 className='text-recommend'>Recommend For You</h1>
+                    <h1 className='text-recommend'>Welcome : [{currentUser ? currentUser.username:""}]</h1>
                     <div className='box-home'>
 
                         <div className='box-1 frame'>
